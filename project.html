@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/93106928f8.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <nav style="background-color: rgb(0, 90, 90);">
+
+        <a href="#" class="logo" style="color: #fff;">Swati Singh</a>
+        <button class="hamburger" onclick="toggleMenu()" style="color: #fff;">☰</button> <!-- Hamburger Icon -->
+
+        <div class="navbar">
+            
+            <ul>
+                <li><a href="index.html" >Home</a></li>
+                <li><a href="about.html" >About</a></li>
+                <li><a href="project.html" class="active">Project</a></li>
+                <li><a href="#" id="contact-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-header">Contact Me</div>
+            <p><i class="fa-solid fa-paper-plane" style="padding: 10px; color: rgb(0, 90, 90);"></i>swati.s10715@gmail.com</p>
+            <p>GITHUB: <a href="https://github.com/10swatisingh2004">https://github.com/10swatisingh2004</a> </p>
+            <p>LINKED IN: <a href="www.linkedin.com/in/swati-singh1004">www.linkedin.com/in/swati-singh1004</a> </p>
+        </div>
+    </div>
+   <main class="projects" style="margin-bottom: 40px;">
+    <div class="title">
+        <h1>PROJECTS</h1>
+        <div class="work">
+            <button class="active" data-name="all">All</button>
+            <button data-name="frontend">Frontend</button>
+            <button data-name="django">Django</button>
+            <button data-name="react">React.js</button>
+            <button data-name="fullstack">FullStack</button>
+        </div>
+        <div class="work_body">
+            <div class="card" data-name="frontend">
+                <a href="https://10swatisingh2004.github.io/to-do-list/" style="text-decoration: none;">
+
+                <img src="image1.png" alt="to-do-list" height="200px">
+                <div class="card_body">
+                    <h6 class="card_title">TO - DO LIST</h6>
+                    <p class="card_text">Plan your day now easily.</p>
+                    
+
+                </div>
+            </a>  
+            </div>
+       
+            <div class="card" data-name="frontend">
+                <a href="https://10swatisingh2004.github.io/Calculator/" style="text-decoration: none;">
+
+                <img src="image2.png" alt="calculator" height="300px">
+                <div class="card_body">
+                    <h6 class="card_title">Calculator</h6>
+                    <p class="card_text">Solve your all maths problem without any error using calculator.</p>
+                   
+                </div>
+            </a>
+            </div>
+        
+            <div class="card" data-name="frontend">
+                <a href=" https://10swatisingh2004.github.io/Image_gallery/" style="text-decoration: none;">
+
+                <img src="image3.png" alt="image-gallery" height="300px">
+                <div class="card_body">
+                    <h6 class="card_title">Image Gallery</h6>
+                    <p class="card_text">Make your own personalized image gallery. Store your memories in a beautifull manner.</p>
+                   
+                </div>
+            </a>
+            </div>
+      
+            <div class="card" data-name="frontend">
+                <a href="https://10swatisingh2004.github.io/countdown-timer/" style="text-decoration: none;">
+
+                <img src="image4.png" alt="countdown-timer" height="300px">
+                <div class="card_body">
+                    <h6 class="card_title">Countdown-timer</h6>
+                    <p class="card_text">Make your special days more special by setting countdown for it.</p>
+                    
+                </div>
+            </a>
+            </div>
+        
+        
+            <div class="card" data-name="frontend">
+                <a href=" https://10swatisingh2004.github.io/temperature_converter/" style="text-decoration: none;">
+                
+                <img src="image5.png" alt="temperature_converter" height="300px">
+                <div class="card_body">
+                    <h6 class="card_title">Temperature Converter</h6>
+                    <p class="card_text">Easily Converter temperature.</p>
+                    
+                </div>
+            </a>   
+            </div>
+       
+        <div class="card" data-name="django" data-video="mindstream.mp4">
+                <img src="image6.png" alt="mindstream" height="300px">
+                <div class="card_body">
+                    <h6 class="card_title">MindStream</h6>
+                    <p class="card_text">A Platform to share your views without any failure.</p>
+                </div>
+                
+        </div>
+            <div class="card" data-name="django" data-video="millsa_library.mp4">
+                <img src="image7.png" alt="temperature_converter" height="300px">
+                <div class="card_body">
+                    <h6 class="card_title">Millsa Library</h6>
+                    <p class="card_text">Keep the record of all books in the library with library management system.</p>
+                </div>
+                
+            </div>
+            <div class="card" data-name="react" data-video="cashminder.mp4">
+                <img src="image8.png" alt="cashminder" height="300px">
+                <div class="card_body">
+                    <h6 class="card_title">Cashminder</h6>
+                    <p class="card_text">Now record all your transaction using cashminder.</p>
+                </div>
+                
+            </div>
+            <div class="card" data-name="fullstack" data-video="musicana.mp4">
+                <img src="image.png" alt="musicana" height="300px">
+                <div class="card_body">
+                    <h6 class="card_title">Musicana</h6>
+                    <p class="card_text">Refresh your mind by listening your favorite song.</p>
+                </div>
+                
+            </div>
+        </div>
+       
+    </div>
+   
+   </main>
+   <div id="videoPopup" class="video-modal">
+    <span class="modal-close">&times;</span>
+    <video id="videoPlayerElement" class="video-player" controls>
+        <source src="" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
+   <script>
+    const filterb = document.querySelectorAll(".work button");
+const filterbody = document.querySelectorAll(".work_body .card , .cards");
+const filtercards = e =>{
+    document.querySelector(".active").classList.remove("active");
+    e.target.classList.add("active");
+
+    filterbody.forEach(card => {
+        card.classList.add("hide");
+        if (card.dataset.name === e.target.dataset.name || e.target.dataset.name === "all" ) {
+            card.classList.remove("hide");
+        }
+    })
+}
+filterb.forEach(button => button.addEventListener("click" , filtercards));
+   </script>
+   <script src="script.js"></script>
+</body>
+</html>
